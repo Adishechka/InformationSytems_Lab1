@@ -133,12 +133,6 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="softwareDefinitions.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Lab1.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\..\..\..\Загрузки\icon.ico" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

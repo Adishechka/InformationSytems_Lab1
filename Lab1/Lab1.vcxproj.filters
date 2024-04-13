@@ -27,14 +27,4 @@
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\..\..\..\Загрузки\icon.ico">
-      <Filter>Файлы заголовков</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Lab1.rc">
-      <Filter>Файлы заголовков</Filter>
-    </ResourceCompile>
-  </ItemGroup>
 </Project>

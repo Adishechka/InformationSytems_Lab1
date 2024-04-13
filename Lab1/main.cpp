@@ -1,4 +1,4 @@
-#include <windows.h>
+п»ї#include <windows.h>
 #include "resource.h"
 #include "softwareDefinitions.h"
 #include <string>
@@ -12,7 +12,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR args, int nCmdSho
         (HBRUSH)COLOR_GRAYTEXT,
         LoadCursor(NULL, IDC_ARROW),
         hInst,
-        LoadIcon(hInst, MAKEINTRESOURCE(IDI_ICON1)),
+        LoadIcon(hInst, MAKEINTRESOURCE(IDI_QUESTION)),
         //LoadIcon(NULL, IDI_QUESTION),
         L"mainWndClass",
         softwareMainProcedure
@@ -62,7 +62,7 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             {
                 if (needToPress == true)
                 {
-                    AddText(hEditControl, GetWindowTextLength(hEditControl), "К сожалению, ты не успел нажать на кнопку. Игра окончена...");
+                    AddText(hEditControl, GetWindowTextLength(hEditControl), "Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, С‚С‹ РЅРµ СѓСЃРїРµР» РЅР°Р¶Р°С‚СЊ РЅР° РєРЅРѕРїРєСѓ. РРіСЂР° РѕРєРѕРЅС‡РµРЅР°...");
                     SetFocus(hWnd);
                     KillTimer(hWnd, TIMER_SECOND_COUNTER);
                     brushRect0 = brushRect1 = brushRect2 = brushRect3 = brushRect4 = brushRect5 = brushRect6 = brushRect7 = brushRect8 = brushRect9 = CreateSolidBrush(RGB(96, 200, 209));
@@ -80,83 +80,83 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             {
             case 0:
                 brushRect0 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 0. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 0. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 1:
                 brushRect1 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 1. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 1. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 2:
                 brushRect2 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 2. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 2. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 3:
                 brushRect3 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 3. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 3. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 4:
                 brushRect4 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 4. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 4. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 5:
                 brushRect5 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 5. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 5. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 6:
                 brushRect6 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 6. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 6. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 7:
                 brushRect7 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 7. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 7. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 8:
                 brushRect8 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 8. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 8. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 9:
                 brushRect9 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась цифра 9. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ С†РёС„СЂР° 9. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 10:
                 brushRectNum0 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num0. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num0. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 11:
                 brushRectNum1 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num1. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num1. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 12:
                 brushRectNum2 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num2. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num2. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 13:
                 brushRectNum3 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num3. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num3. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 14:
                 brushRectNum4 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num4. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num4. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 15:
                 brushRectNum5 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num5. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num5. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 16:
                 brushRectNum6 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num6. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num6. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 17:
                 brushRectNum7 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num7. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num7. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 18:
                 brushRectNum8 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num8. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num8. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             case 19:
                 brushRectNum9 = CreateSolidBrush(RGB(255, 255, 255));
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nЗагорелась Num9. Скорее нажми её на клавиатуре за 10 секунд!");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "\r\nР—Р°РіРѕСЂРµР»Р°СЃСЊ Num9. РЎРєРѕСЂРµРµ РЅР°Р¶РјРё РµС‘ РЅР° РєР»Р°РІРёР°С‚СѓСЂРµ Р·Р° 10 СЃРµРєСѓРЅРґ!");
                 break;
             }
             needToPress = true;
@@ -173,7 +173,7 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
         break;
 
 
-    // Решить проблему с привязкой клавиш к кнопкам 
+    // Р РµС€РёС‚СЊ РїСЂРѕР±Р»РµРјСѓ СЃ РїСЂРёРІСЏР·РєРѕР№ РєР»Р°РІРёС€ Рє РєРЅРѕРїРєР°Рј 
     case WM_KEYDOWN:
         if (gameStatus == false)
         {
@@ -193,70 +193,70 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             keyPressed = int(wp) - '0';
             brushRect1 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 1 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 1 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x32:
             keyPressed = int(wp) - '0';
             brushRect2 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 2 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 2 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x33:
             keyPressed = int(wp) - '0';
             brushRect3 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 3 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 3 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x34:
             keyPressed = int(wp) - '0';
             brushRect4 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 4 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 4 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x35:
             keyPressed = int(wp) - '0';
             brushRect5 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 5 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 5 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x36:
             keyPressed = int(wp) - '0';
             brushRect6 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 6 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 6 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x37:
             keyPressed = int(wp) - '0';
             brushRect7 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 7 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 7 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x38:
             keyPressed = int(wp) - '0';
             brushRect8 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 8 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 8 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x39:
             keyPressed = int(wp) - '0';
             brushRect9 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 9 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 9 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case 0x30:
             keyPressed = int(wp) - '0';
             brushRect0 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Цифра 0 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Р¦РёС„СЂР° 0 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
 
@@ -264,85 +264,85 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             keyPressed = int(0x31) - '0' + 10;
             brushRectNum1 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 1 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 1 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD2:
             keyPressed = int(0x32) - '0' + 10;
             brushRectNum2 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 2 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 2 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD3:
             keyPressed = int(0x33) - '0' + 10;
             brushRectNum3 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 3 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 3 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD4:
             keyPressed = int(0x34) - '0' + 10;
             brushRectNum4 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 4 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 4 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD5:
             keyPressed = int(0x35) - '0' + 10;
             brushRectNum5 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 5 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 5 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD6:
             keyPressed = int(0x36) - '0' + 10;
             brushRectNum6 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 6 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 6 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD7:
             keyPressed = int(0x37) - '0' + 10;
             brushRectNum7 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 7 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 7 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD8:
             keyPressed = int(0x38) - '0' + 10;
             brushRectNum8 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 8 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 8 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD9:
             keyPressed = int(0x39) - '0' + 10;
             brushRectNum9 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 9 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 9 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
         case VK_NUMPAD0:
             keyPressed = int(0x30) - '0' + 10;
             brushRectNum0 = CreateSolidBrush(RGB(53, 176, 86));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 0 нажата за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "Num 0 РЅР°Р¶Р°С‚Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
             break;
 
         case VK_DELETE:
-            SetWindowTextA(hEditControl, "Для начала теста нажмите SPACE, а для завершения - Enter");
+            SetWindowTextA(hEditControl, "Р”Р»СЏ РЅР°С‡Р°Р»Р° С‚РµСЃС‚Р° РЅР°Р¶РјРёС‚Рµ SPACE, Р° РґР»СЏ Р·Р°РІРµСЂС€РµРЅРёСЏ - Enter");
             break;
 
         case VK_ESCAPE:
             DestroyWindow(hWnd);
             break;
 
-        // Отсюда начнётся старт игры (от Enter)
+        // РћС‚СЃСЋРґР° РЅР°С‡РЅС‘С‚СЃСЏ СЃС‚Р°СЂС‚ РёРіСЂС‹ (РѕС‚ Enter)
         case VK_RETURN:
             KillTimer(hWnd, TIMER_SECOND_COUNTER);
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Тест был принудительно остановлен!");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "РўРµСЃС‚ Р±С‹Р» РїСЂРёРЅСѓРґРёС‚РµР»СЊРЅРѕ РѕСЃС‚Р°РЅРѕРІР»РµРЅ!");
             SetFocus(hWnd);
             brushRect0 = brushRect1 = brushRect2 = brushRect3 = brushRect4 = brushRect5 = brushRect6 = brushRect7 = brushRect8 = brushRect9 = CreateSolidBrush(RGB(96, 200, 209));
             brushRectNum0 = brushRectNum1 = brushRectNum2 = brushRectNum3 = brushRectNum4 = brushRectNum5 = brushRectNum6 = brushRectNum7 = brushRectNum8 = brushRectNum9 = CreateSolidBrush(RGB(96, 200, 209));
@@ -352,7 +352,7 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             break;
 
         case VK_SPACE:
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Тест началался, удачи!");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "РўРµСЃС‚ РЅР°С‡Р°Р»Р°Р»СЃСЏ, СѓРґР°С‡Рё!");
             SetFocus(hWnd);
             srand(time(NULL));
             randIntervalTimer = (std::rand() % 3000) + 1000;
@@ -362,9 +362,9 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             SetTimer(hWnd, TIMER_SECOND_COUNTER, randIntervalTimer, NULL);
             break;
         default:
-            AddText(hEditControl, GetWindowTextLength(hEditControl), "Нажата неподдерживаемая клавиша за " + std::to_string(timerReactionNow) + " секунд");
+            AddText(hEditControl, GetWindowTextLength(hEditControl), "РќР°Р¶Р°С‚Р° РЅРµРїРѕРґРґРµСЂР¶РёРІР°РµРјР°СЏ РєР»Р°РІРёС€Р° Р·Р° " + std::to_string(timerReactionNow) + " СЃРµРєСѓРЅРґ");
             SetFocus(hWnd);
-            MessageBoxA(hWnd, "Эта клавиша не поддерживается", "Ошибка!", MB_OK);
+            MessageBoxA(hWnd, "Р­С‚Р° РєР»Р°РІРёС€Р° РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ", "РћС€РёР±РєР°!", MB_OK);
             brushRect0 = brushRect1 = brushRect2 = brushRect3 = brushRect4 = brushRect5 = brushRect6 = brushRect7 = brushRect8 = brushRect9 = CreateSolidBrush(RGB(96, 200, 209));
             brushRectNum0 = brushRectNum1 = brushRectNum2 = brushRectNum3 = brushRectNum4 = brushRectNum5 = brushRectNum6 = brushRectNum7 = brushRectNum8 = brushRectNum9 = CreateSolidBrush(RGB(96, 200, 209));
             RedrawWindow(hWnd, NULL, NULL, RDW_INVALIDATE | RDW_UPDATENOW);
@@ -374,9 +374,9 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
         {
             if (keyPressed != randIntervalNumber)
             {
-                AddText(hEditControl, GetWindowTextLength(hEditControl), "Нажата не та клавиша");
+                AddText(hEditControl, GetWindowTextLength(hEditControl), "РќР°Р¶Р°С‚Р° РЅРµ С‚Р° РєР»Р°РІРёС€Р°");
                 SetFocus(hWnd);
-                MessageBoxA(hWnd, "Нажата не та клавиша. Попробуй ещё", "Ошибка!", MB_OK);
+                MessageBoxA(hWnd, "РќР°Р¶Р°С‚Р° РЅРµ С‚Р° РєР»Р°РІРёС€Р°. РџРѕРїСЂРѕР±СѓР№ РµС‰С‘", "РћС€РёР±РєР°!", MB_OK);
             }
             else
             {
@@ -399,10 +399,10 @@ LRESULT CALLBACK softwareMainProcedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp
             else
             {
                 endingMessage = 
-                      "\r\nТест подошёл к концу.\r\n\tВсего тестов: " + std::to_string(totalPress) 
-                    + " \r\n\tУспешных тестов : " + std::to_string(correctPress)
-                    + " \r\n\tНеуспешных тестов : " + std::to_string(totalPress - correctPress)
-                    + " \r\n\tСреднее время нажатия на клавиши: " + std::to_string(timerReactionTotal / totalPress);
+                      "\r\nРўРµСЃС‚ РїРѕРґРѕС€С‘Р» Рє РєРѕРЅС†Сѓ.\r\n\tР’СЃРµРіРѕ С‚РµСЃС‚РѕРІ: " + std::to_string(totalPress) 
+                    + " \r\n\tРЈСЃРїРµС€РЅС‹С… С‚РµСЃС‚РѕРІ : " + std::to_string(correctPress)
+                    + " \r\n\tРќРµСѓСЃРїРµС€РЅС‹С… С‚РµСЃС‚РѕРІ : " + std::to_string(totalPress - correctPress)
+                    + " \r\n\tРЎСЂРµРґРЅРµРµ РІСЂРµРјСЏ РЅР°Р¶Р°С‚РёСЏ РЅР° РєР»Р°РІРёС€Рё: " + std::to_string(timerReactionTotal / totalPress);
                 
                 AddText(hEditControl, GetWindowTextLength(hEditControl), endingMessage);
                 SetFocus(hWnd);
@@ -567,7 +567,7 @@ void MainWndAddWidgets(HWND hWnd)
 {
     CreateWindowA("static", "Lab 1 - Win32Api. AdievKR", WS_VISIBLE | WS_CHILD | ES_CENTER, 250, 2, 400, 20, hWnd, NULL, NULL, NULL);
 
-    // Горизонтальный цифровой блок
+    // Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ С†РёС„СЂРѕРІРѕР№ Р±Р»РѕРє
     rect1 = { 30, 80, 80, 30 };
     rect2 = { 100, 80, 150, 30 };
     rect3 = { 170, 80, 220, 30 };
@@ -591,7 +591,7 @@ void MainWndAddWidgets(HWND hWnd)
     rectNum3 = { 940, 290, 890, 240 };
     rectNum0 = { 870, 360, 750, 310 };
 
-    hEditControl = CreateWindowA("edit", "Для начала теста нажмите SPACE, а для завершения - Enter", WS_VISIBLE | WS_CHILD | ES_WANTRETURN | ES_MULTILINE | WS_VSCROLL | ES_READONLY, 30, 100, 680, 400, hWnd, NULL, NULL, NULL);
+    hEditControl = CreateWindowA("edit", "Р”Р»СЏ РЅР°С‡Р°Р»Р° С‚РµСЃС‚Р° РЅР°Р¶РјРёС‚Рµ SPACE, Р° РґР»СЏ Р·Р°РІРµСЂС€РµРЅРёСЏ - Enter", WS_VISIBLE | WS_CHILD | ES_WANTRETURN | ES_MULTILINE | WS_VSCROLL | ES_READONLY, 30, 100, 680, 400, hWnd, NULL, NULL, NULL);
 }
 
 void AddText(HWND& hWnd, int index, std::string text)
